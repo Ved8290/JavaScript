@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //Write a JavaScript Program to determine whether a give year is a year. 
+        //Ask for a year using prompt() and display the message using alert. 
+
+        let year=prompt("Enter a year :");
+        if(year===""){
+            alert("Please Enter a valid year..");
+        }else{
+            if(year%4==0){
+                alert(`${year} is leap Year`);
+            }else{
+                alert(`${year} is not leap Year`);
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number=prompt('Enter a Number ');
+        let reverseNumber=0;
+        const reverseNumberFunction=function(number){
+            while(number>0){
+            let temp=number%10;
+            reverseNumber=reverseNumber*10+temp;
+
+            number=Math.floor(number/10);
+        }
+        alert(`Reverse of ${number} : ${reverseNumber}`);
+        }
+
+        reverseNumberFunction(number);
+    </script>
+</body>
+</html>
