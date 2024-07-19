@@ -7,7 +7,25 @@
 </head>
 <body>
     <script>
-       // ANSWER .....!!!!!...
-    </script> 
+     
+let num = parseInt(prompt("Enter a number:"));
+
+let total = Math.abs(num); 
+while (total >= 10) {
+    let sum = 0;
+    let number = total;
+
+    while (number > 0) {
+        let digit = number % 10;
+        sum =sum + digit;
+        number = Math.floor(number / 10);  }
+
+    total = sum;
+}
+
+console.log("The single digit sum is:", total);
+
+     
+    </script>
 </body>
 </html>
