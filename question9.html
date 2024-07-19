@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function numberToWords(num) 
+        {
+    
+    const words = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
+
+   
+    let numStr = num.toString();
+    let result = [];
+
+    
+    for (let i = 0; i < numStr.length; i++) 
+    {
+        let digit = parseInt(numStr[i]);
+        result.push(words[digit]);
+    }
+
+    
+}
+
+let number = 12345;
+let words = numberToWords(number);
+console.log(number + " in words:", words); // Output: "123 in words: One Two Three"
+    </script>
+</body>
+</html>
